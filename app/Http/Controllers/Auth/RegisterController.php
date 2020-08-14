@@ -53,6 +53,10 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'jenis_kelamin' => ['required', 'string', 'max:255'],
+            'nomor_telepon' => ['required', 'string', 'max:15'],
+            'nomor_whatsapp' => ['required', 'string', 'max:15'],
+            'alamat_lengkap' => ['required', 'string', 'max:600'],
         ]);
     }
 
@@ -68,6 +72,26 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'jenis_kelamin' => $data['jenis_kelamin'],
+            'nomor_telepon' => $data['nomor_telepon'],
+            'nomor_whatsapp' => $data['nomor_whatsapp'],
+            'alamat_lengkap' => $data['alamat_lengkap'],
         ]);
     }
+
+    //
+
+    /**
+     * Show the application registration form.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showRegistrationForm()
+    {
+        return view('auth.register', [
+            'genders' => ['Pilih jenis kelamin', 'Laki-laki', 'Perempuan']
+        ]);
+    }
+
+    //
 }

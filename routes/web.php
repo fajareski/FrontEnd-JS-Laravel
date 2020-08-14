@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,7 @@ Route ::get('/daftarsiswa','PagesController@daftarsiswa');
 Route ::get('/masuksiswa','PagesController@masuksiswa');
 Route ::get('/masukguru','PagesController@masukguru');
 Route ::get('/daftarguru','PagesController@daftarguru');
+
+Auth::routes(['verify' => true]);
+
+Route::get('/home', 'HomeController@index')->name('home');

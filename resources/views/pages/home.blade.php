@@ -24,7 +24,7 @@
   
           <div class="modal-content animate">
             <div class="imgcontainer">
-              <form action="{{ url('/masuksiswa') }}">
+              <form action="{{ route('login') }}">
               <button id="submit" type="submit" style="color: white;">Masuk Siswa</button>
               </form>
               <form action="masukpengajar.html">
@@ -43,7 +43,7 @@
   
           <div class="modal-content animate">
             <div class="imgcontainer">
-              <form action="{{ url('/daftarsiswa') }}">
+              <form action="{{ route('register') }}">
               <button id="submit" type="submit" style="color: white;">Daftar Siswa</button>
               </form>
               <form action="buatakunpengajar.html">
