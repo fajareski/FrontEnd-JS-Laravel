@@ -25,4 +25,18 @@ class PagesController extends Controller
     {
         return view('pages.masuksiswa');
     }
+
+    public function invoice()
+    {
+        return view('pages.invoice');
+    }
+
+    public function pembayaran()
+    {
+        return view('pages.pembayaran');
+    }
+    public function konfirmasibayar()
+    {
+        return view('pages.konfirmasibayar');
+    }
 }

@@ -70,7 +70,7 @@
             </ul>
           </li>
           <li><a href="#">Jadwal Bimbel Kelas Tatap Muka</a></li>
-          <li><a href="{{ url('/belipaket') }}">Cara Pembelian Paket belajar</a></li>
+          <li><a href="#">Cara Pembelian Paket belajar</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Kontak Kami</a></li>
 

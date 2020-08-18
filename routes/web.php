@@ -29,6 +29,9 @@ Route ::get('/daftarsiswa','PagesController@daftarsiswa');
 Route ::get('/masuksiswa','PagesController@masuksiswa');
 Route ::get('/masukguru','PagesController@masukguru');
 Route ::get('/daftarguru','PagesController@daftarguru');
+Route ::get('/invoice','PagesController@invoice');
+Route ::get('/pembayaran','PagesController@pembayaran');
+Route ::get('/konfirmasibayar','PagesController@konfirmasibayar');
 
 Auth::routes(['verify' => true]);
 

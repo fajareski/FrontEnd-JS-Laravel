@@ -663,12 +663,17 @@ section {
   color: #5e5e5e;
 }
 
+#isi-pro{
+  font-size: 14px;
+}
+
 .services .read-more a {
   color: #777777;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 20px;
   transition: 0.3s;
+  text-align: center;
 }
 
 .services .read-more a:hover {
