@@ -1423,3 +1423,43 @@ section {
     text-align: ceneter;
   }
 }
+
+#mySidenav a {
+  position: absolute;
+  left: -180px;
+  transition: 0.5s;
+  padding: 15px;
+  width: 210px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#profil {
+  top: 160px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 345px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 565px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 807px;
+  background-color: #555
+}
+
+.main{
+  background-color: #eceff1;
+}

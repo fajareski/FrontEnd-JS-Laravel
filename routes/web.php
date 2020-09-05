@@ -32,7 +32,12 @@ Route ::get('/daftarguru','PagesController@daftarguru');
 Route ::get('/invoice','PagesController@invoice');
 Route ::get('/pembayaran','PagesController@pembayaran');
 Route ::get('/konfirmasibayar','PagesController@konfirmasibayar');
+Route ::get('/video','PagesController@video');
+Route ::get('/tryout','PagesController@tryout');
 
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('cat', 'JenjangController@index');
+Route::post('subcat', 'JenjangController@subCat');

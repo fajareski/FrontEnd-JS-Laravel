@@ -39,4 +39,12 @@ class PagesController extends Controller
     {
         return view('pages.konfirmasibayar');
     }
+    public function video()
+    {
+        return view('pages.video');
+    }
+    public function tryout()
+    {
+        return view('pages.tryout');
+    }
 }
